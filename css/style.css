@@ -1,0 +1,98 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17, 11, 49);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    margin-bottom: 2rem;
+}   
+
+header,
+footer{
+    height: 5rem;
+    background-color: rgb(15, 71, 53);
+    border: 2px solid white;
+}
+
+aside,
+main{
+    height: calc(100vh - 14rem);
+    background-color: rgb(80, 80, 215);
+    border: 2px solid white;
+    margin-bottom: 2rem;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+.flex-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.row > aside,
+div.row > main  {
+    width: 80%;
+}
+
+div.box{
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+    margin-bottom: .5rem;
+}
+
+/* ! Dispositivi almeno grandi 576, DA 576 IN SU  */
+@media screen and (min-width: 576px) {
+    body {
+        background-color: rgb(92, 23, 95);
+    }
+    
+    div.row > aside {
+        width: 25%;
+    }
+    
+    div.row > main {
+        width: 65%;
+    }	
+
+    h1{
+        font-size: 2.8rem;
+    }
+
+    div.box{
+        display: inline-block;
+        margin-right: .5rem;
+        background-color: red;
+    }
+}
+
+/* ! Dispositivi almeno grandi 768, DA 768px IN SU  */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: rgb(19, 76, 29);
+    }	
+}
+
+/* ! Dispositivi almeno grandi 992px, DA 992px IN SU  */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: rgb(76, 28, 19);
+    }	
+}
